@@ -21,7 +21,7 @@ from classes.restaurant import restaurantClass
 #   - Incorporate Pep8 style standard
 
 def main():
-    restaurant = restaurantClass("John's restaurant")
+    restaurant = restaurantClass("John's Restaurant")
 
     print(f"Opening {restaurant.name} \n")
 
@@ -38,8 +38,8 @@ def main():
 
     print(f"Served: {restaurant.served}")
     print(f"Lifetime Served: {restaurant.totalServed}")
-    print(f"First order: {restaurant.orders[0]}")
-    print(f"Last order: {restaurant.orders[-1]}")
+    print(f"First order: {restaurant.orders[0].title()}")
+    print(f"Last order: {restaurant.orders[-1].title()}")
 
     restaurant.close()
 
