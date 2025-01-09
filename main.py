@@ -25,16 +25,16 @@ def main():
 
     print(f"Opening {restaurant.name} \n")
 
-    # create 30 customers
+    # Create 30 customers
     for _ in range(0, 30):
         customer = customerClass()
+        print(customer)
         order = customer.orderFood()
 
         restaurant.track(order)
         restaurant.served += 1
         restaurant.totalServed += 1
 
-        # Clean up
         del(customer)
 
     print(f"Served: {restaurant.served}")
