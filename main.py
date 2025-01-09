@@ -28,7 +28,6 @@ def main():
     # Create 30 customers
     for _ in range(0, 30):
         customer = customerClass()
-        print(customer)
         order = customer.orderFood()
 
         restaurant.track(order)
